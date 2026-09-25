@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { to: '/categorias', label: 'Categorias' },
   { to: '/contas', label: 'Contas' },
   { to: '/cobrancas-fixas', label: 'Cobranças fixas' },
+  { to: '/importar', label: 'Importar' },
 ];
 
 export function AppLayout() {

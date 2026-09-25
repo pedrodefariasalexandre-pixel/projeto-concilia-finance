@@ -11,6 +11,7 @@ import { Pessoas } from './routes/cadastros/Pessoas'
 import { Categorias } from './routes/cadastros/Categorias'
 import { Contas } from './routes/cadastros/Contas'
 import { CobrancasFixas } from './routes/cadastros/CobrancasFixas'
+import { Importar } from './routes/Importar'
 import './App.css'
 
 function Home() {
@@ -140,6 +141,7 @@ function App() {
             <Route path="/categorias" element={<Categorias />} />
             <Route path="/contas" element={<Contas />} />
             <Route path="/cobrancas-fixas" element={<CobrancasFixas />} />
+            <Route path="/importar" element={<Importar />} />
           </Route>
         </Route>
       </Route>

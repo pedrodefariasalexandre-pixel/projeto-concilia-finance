@@ -27,7 +27,9 @@ export interface ClosedMonthFingerprint {
   itemKeys: string[]; // mesma chave canônica usada na assinatura, uma por transação daquele mês
 }
 
-function itemKey(tx: MergedTransaction): string {
+/** Mesma chave canônica usada internamente pela assinatura — exportada pra quem precisar
+ * reconstruir um fingerprint comparável a partir de dados já persistidos (nunca duplicar este formato). */
+export function itemKey(tx: MergedTransaction): string {
   return `${tx.fitid}|${tx.amountCents}|${tx.description.trim()}`;
 }
 
